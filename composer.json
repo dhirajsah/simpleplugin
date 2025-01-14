@@ -1,5 +1,5 @@
 {
-  "name": "yourvendor/simpleplugin",
+  "name": "dhirajsah/simpleplugin",
   "description": "A simple Craft CMS 4 plugin for testing.",
   "type": "craft-plugin",
   "require": {
@@ -7,14 +7,14 @@
   },
   "autoload": {
     "psr-4": {
-      "yourvendor\\simpleplugin\\": "src/"
+      "dhirajsah\\simpleplugin\\": "src/"
     }
   },
   "extra": {
     "handle": "simpleplugin",
     "name": "Simple Plugin",
     "type": "plugin",
-    "class": "yourvendor\\simpleplugin\\SimplePlugin"
+    "class": "dhirajsah\\simpleplugin\\SimplePlugin"
   },
   "homepage": "https://webexwebsolutions.com/",
   "authors": [
