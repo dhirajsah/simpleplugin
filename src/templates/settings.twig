@@ -1,0 +1,23 @@
+
+
+<h1>Simple Plugin Settings</h1>
+
+<p>
+    Developed by <strong>Your Full Name</strong>. 
+
+	<br>
+    Visit the <a href="https://example.com/plugins/simpleplugin" target="_blank">plugin page</a> for more information.
+</p>
+
+<form method="post" action="{{ url('admin/actions/plugins/save-plugin-settings') }}">
+	{{ csrfInput() }}
+	{{ hiddenInput('pluginId', id) }}
+
+	<div>
+		<label id="toolbar-label" for="exampleSetting">Example Setting</label><br>
+		<input type="text" id="exampleSetting" name="settings[exampleSetting]" value="" class="text fullwidth">
+	</div>
+
+
+	<button type="submit" class="btn">Save</button>
+</form>
